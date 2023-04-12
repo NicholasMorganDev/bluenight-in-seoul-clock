@@ -18,7 +18,7 @@ const getCurrentTime = () => {
   hour = checkLeadingZero(hour);
   minute = checkLeadingZero(minute);
   second = checkLeadingZero(second);
-  //millisecond = leadingZeroMilli(millisecond);
+  millisecond = leadingZeroMilli(millisecond);
 
   //assemble
   let currentTime = `${dayArray[day]} ${hour} : ${minute} : ${second} : ${millisecond}`;
@@ -38,10 +38,9 @@ const checkLeadingZero = paramTime => {
 
 const leadingZeroMilli = paramTime => {
   if (paramTime < 10){
-    paramTime = `0${paramTime}`
-  } else if (paramTime < 100){
     paramTime = `00${paramTime}`
-  } else {
-    null
-  }
+  } else if (paramTime < 100) {
+    paramTime = `0${paramTime}`
+  } 
+  return paramTime;
 }
