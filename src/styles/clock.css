@@ -1,0 +1,51 @@
+:root {
+  --main-color: white;
+}
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 110vh;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  font-size: 22px;
+  font-family: "Orbitron", sans-serif;
+  color: var(--main-color);
+  border: 2px solid yellow;
+  font-weight: 400;
+  text-align: center;
+  
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 13px;
+
+  background-color: #D9AFD9;
+
+  background: rgb(1,0,19);
+  background: linear-gradient(346deg, rgba(1,0,19,1) 24%, rgba(213,10,228,1) 51%, rgba(33,50,175,1) 71%);
+  opacity: 80%;
+
+  -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
